@@ -1,0 +1,241 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400px;
+}
+ol {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+#lists {
+    width: 500px;
+    margin-top:20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#firstol2 {
+    
+    margin-left: 50px;
+}
+
+#firstol3 {
+    margin-left: 100px;
+}
+
+.list1 {
+    height: 50px;
+    width: 400px;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+li {
+    margin-left: 10px;
+    list-style: none;
+    list-style-image: url("icon-star.svg");
+}
+
+#parent {
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    width: 1000px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:30px;
+}
+
+#firstdiv {
+    grid-column-start:1;
+    grid-column-end:2;
+    width: 370px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+h1 {
+    font-size: 40px;
+    color: hsl(300, 43%, 22%);
+}
+
+#text1 {
+    font-size: 14px;
+    color: hsl(303, 10%, 53%);
+}
+
+
+
+#box {
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:2;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    
+}
+.images{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.imagediv{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#imagediv {
+    background-image: url("image-colton.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#imagediv2 {
+    background-image: url("images/image-irene.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#imagediv3 {
+    background-image: url("images/image-anne.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.boxs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    border-radius: 5px;
+    height: 200px;
+    width: 313px;
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    color:hsl(300, 24%, 96%);
+}
+
+b {
+    color: hsl(333, 80%, 67%);
+}
+
+.p2 {
+    width: 220px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+#box2 {
+    margin-top: 20px;
+}
+
+#box3 {
+    margin-top: 40px;
+}
+
+@media  (max-width: 500px){
+    #parent {
+        height: 100vh;
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #content {
+        width: 300px;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #firstdiv {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .list1 {
+        height: 80px;
+        width: 300px;
+        background-color: hsl(300, 24%, 96%);
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+    }
+    #firstol2 {
+        margin-left: 0px;
+    }
+
+    #firstol3 {
+        margin-left: 0px;
+    }
+    #lists {
+        width: 250px;
+        margin-top:20px;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #box {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        font-size: x-large;
+    }
+    .boxs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        gap: 10px;
+        height: 200px;
+        width: 300px;
+        background-color: hsl(300, 43%, 22%);
+        padding: 30px;
+        color:hsl(300, 24%, 96%);
+    }
+    #box2 {
+        margin-top: 0;
+    }
+
+    #box3 {
+        margin-top: 0px;
+    }
+}
