@@ -1,0 +1,92 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+@import url("https://fonts.google.com/specimen/Poppins");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#parent {
+    border-radius: 20px;
+    width: 38%;
+    height: 60%;
+    background-color: hsl(0, 100%, 100%);
+    padding: 30px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+#boxs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+label {
+    font-size: 10px;
+    color: hsl(0, 1%, 44%);
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+b {
+    color: hsl(259, 100%, 65%);
+}
+
+input {
+    font-weight: 700;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid hsl(0, 1%, 44%);
+    border-radius: 5px;
+}
+hr{
+    width: 80%;
+    height: 1px;
+}
+#btndiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#btn {
+    border:1px solid hsl(259, 100%, 65%);
+    height: 70px;
+    width: 70px;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#btn:active {
+    background-color: black;
+    border:1px solid black;
+}
